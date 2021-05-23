@@ -42,7 +42,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       disabled={disabled || loading}
-      className={`flex outline-none ${color} ${
+      className={`flex outline-none focus:outline-none ${color} ${
         sizeClassnames[size]
       } ${transition ? `transition duration-200 ease-in-out` : ``} ${
         colorClassnames[color]
